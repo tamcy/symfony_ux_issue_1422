@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <h2>Controller under root directory</h2>
+    <section {{ stimulus_controller('hello') }}>
+        Not loaded
+    </section>
+
+    <h2>Controller under subdirectory</h2>
+    <section {{ stimulus_controller('user/hello') }}>
+        Not loaded
+    </section>
+
+{% endblock %}
